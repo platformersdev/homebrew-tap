@@ -1,16 +1,16 @@
 class KubectlX < Formula
   desc "kubectl plugin that runs commands against every context in parallel"
   homepage "https://github.com/platformersdev/kubectl-x"
-  version "0.0.89"
+  version "0.0.91"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.89/kubectl-x-darwin-arm64"
-      sha256 "493ee03d93eb13b9cfa84a208f3d9c8a657e149b603cc8339ad8797a50d6b308"
+      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.91/kubectl-x-darwin-arm64"
+      sha256 "9d84300a216743f23b78e8c3bdefcc22fbcdad5fbf409294fb8f2b9fa0db6a62"
     else
-      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.89/kubectl-x-darwin-amd64"
-      sha256 "f2e59f880d6568c53d6c5b1a0d3b03d60e035beb64d424579c05fb3ff8772b7a"
+      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.91/kubectl-x-darwin-amd64"
+      sha256 "a093b403fdee7418e5813da5dbc963627005ff1f22bb605744ac320b8392d286"
     end
   end
 
@@ -18,8 +18,8 @@ class KubectlX < Formula
     if Hardware::CPU.arm?
       odie "kubectl-x is not available for Linux ARM"
     else
-      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.89/kubectl-x-linux-amd64"
-      sha256 "cbfacf41fb0b06eef9bfafdb002d64e281767d85db73d9637c2b7ee84bf6b546"
+      url "https://github.com/platformersdev/kubectl-x/releases/download/v0.0.91/kubectl-x-linux-amd64"
+      sha256 "5add360317c30336a0b15b5e136a61e4fd3fe521bcd05e722fb7e03a640fb9e5"
     end
   end
 
